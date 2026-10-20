@@ -3,7 +3,7 @@ name: JM Check-in
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "10 7 * * *"
 
 jobs:
   checkin:
@@ -32,7 +32,7 @@ jobs:
               username: "${JM_USERNAME}"
               password: "${JM_PASSWORD}"
           schedule:
-            time: "08:00"
+            time: "15:10"
             timezone: "Asia/Shanghai"
             run_on_start: true
           notify:
